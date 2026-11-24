@@ -1,0 +1,46 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<learningResources>
+
+    <website>
+        <name>CodeCraft Academy</name>
+        <project>Web Design Learning Resource Website</project>
+        <description>
+            A learning platform for HTML, CSS and JavaScript.
+        </description>
+    </website>
+
+    <courses>
+
+        <course id="C01">
+            <title>HTML</title>
+            <fullForm>Hyper Text Markup Language</fullForm>
+            <level>Beginner</level>
+            <purpose>Creating webpage structure</purpose>
+        </course>
+
+        <course id="C02">
+            <title>CSS</title>
+            <fullForm>Cascading Style Sheets</fullForm>
+            <level>Beginner</level>
+            <purpose>Styling and designing webpages</purpose>
+        </course>
+
+        <course id="C03">
+            <title>JavaScript</title>
+            <fullForm>JavaScript</fullForm>
+            <level>Beginner</level>
+            <purpose>Adding interactivity to websites</purpose>
+        </course>
+
+    </courses>
+
+    <activities>
+        <activity>Interactive Quiz</activity>
+        <activity>Live HTML Preview</activity>
+        <activity>Show and Hide Answers</activity>
+        <activity>Student Form Validation</activity>
+    </activities>
+
+</learningResources>

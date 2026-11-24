@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Zone | CodeCraft Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">CodeCraft<span> Academy</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="practice.html" class="active">Practice Zone</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="tag">LEARN BY DOING</p>
+        <h1>Welcome to the Practice Zone.</h1>
+        <p>
+            Learning becomes easier when you practise. Test your
+            knowledge, write HTML code, check your answers and
+            improve your web development skills.
+        </p>
+        <a href="#quiz" class="btn primary">Start Practising</a>
+    </div>
+
+    <div class="hero-code">
+        <p>Your Learning Journey</p>
+        <pre>
+HTML   = Structure
+CSS    = Design
+JS     = Interaction
+
+Learn → Practise → Improve
+        </pre>
+        <div class="preview">
+            <h2>Keep Building!</h2>
+            <p>Every expert was once a beginner.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- PRACTICE OVERVIEW -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">YOUR LEARNING SPACE</p>
+        <h2>What Can You Practise?</h2>
+        <p>Choose an activity and start learning through practice.</p>
+    </div>
+
+    <div class="card-container">
+        <div class="learning-card">
+            <h3>HTML Practice</h3>
+            <p>Work with headings, paragraphs, links, images and forms.</p>
+        </div>
+
+        <div class="learning-card">
+            <h3>CSS Practice</h3>
+            <p>Explore colours, layouts, spacing and styling.</p>
+        </div>
+
+        <div class="learning-card">
+            <h3>JavaScript Practice</h3>
+            <p>Learn variables, conditions, functions and events.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- QUIZ -->
+<section class="learning" id="quiz">
+    <div class="section-heading">
+        <p class="tag">ACTIVITY 01</p>
+        <h2>Test Your Knowledge</h2>
+        <p>Answer these questions and check your score.</p>
+    </div>
+
+    <div class="learning-card practice-panel">
+
+        <div class="quiz-question">
+            <h3>Question 1: What does HTML stand for?</h3>
+
+            <label class="practice-option">
+                <input type="radio" name="q1" value="a">
+                Hyper Text Markup Language
+            </label>
+
+            <label class="practice-option">
+                <input type="radio" name="q1" value="b">
+                High Text Machine Language
+            </label>
+
+            <label class="practice-option">
+                <input type="radio" name="q1" value="c">
+                Hyper Tool Multi Language
+            </label>
+        </div>
+
+        <div class="quiz-question">
+            <h3>Question 2: Which CSS property changes text colour?</h3>
+
+            <label class="practice-option">
+                <input type="radio" name="q2" value="a">
+                background
+            </label>
+
+            <label class="practice-option">
+                <input type="radio" name="q2" value="b">
+                color
+            </label>
+
+            <label class="practice-option">
+                <input type="radio" name="q2" value="c">
+                font-style
+            </label>
+        </div>
+
+        <div class="quiz-question">
+            <h3>Question 3: Which keyword declares a block-scoped variable?</h3>
+
+            <label class="practice-option">
+                <input type="radio" name="q3" value="a">
+                print
+            </label>
+
+            <label class="practice-option">
+                <input type="radio" name="q3" value="b">
+                display
+            </label>
+
+            <label class="practice-option">
+                <input type="radio" name="q3" value="c">
+                let
+            </label>
+        </div>
+
+        <div class="quiz-question">
+            <h3>Question 4: Which HTML tag creates a hyperlink?</h3>
+
+            <label class="practice-option">
+                <input type="radio" name="q4" value="a">
+                &lt;a&gt;
+            </label>
+
+            <label class="practice-option">
+                <input type="radio" name="q4" value="b">
+                &lt;p&gt;
+            </label>
+
+            <label class="practice-option">
+                <input type="radio" name="q4" value="c">
+                &lt;h1&gt;
+            </label>
+        </div>
+
+        <div class="quiz-question">
+            <h3>Question 5: Which method selects an element by its ID?</h3>
+
+            <label class="practice-option">
+                <input type="radio" name="q5" value="a">
+                queryAll()
+            </label>
+
+            <label class="practice-option">
+                <input type="radio" name="q5" value="b">
+                getElementById()
+            </label>
+
+            <label class="practice-option">
+                <input type="radio" name="q5" value="c">
+                getClass()
+            </label>
+        </div>
+
+        <button type="button" class="btn primary" id="submitQuiz">
+            Submit Quiz
+        </button>
+
+        <div id="quizResult" class="practice-result" aria-live="polite">
+            Your result will appear here.
+        </div>
+
+        <button type="button" class="btn secondary" id="resetQuiz">
+            Try Again
+        </button>
+
+    </div>
+</section>
+
+
+<!-- LIVE HTML EDITOR -->
+<section class="learning" id="html-editor">
+    <div class="section-heading">
+        <p class="tag">ACTIVITY 02</p>
+        <h2>Live HTML Playground</h2>
+        <p>Write your own HTML code and see the result instantly.</p>
+    </div>
+
+    <div class="learning-card practice-panel">
+        <label for="htmlCode"><strong>Write HTML Code:</strong></label>
+
+        <textarea id="htmlCode" class="code-editor" rows="10"><h1>Hello World!</h1>
+<p>This is my first live preview.</p>
+<button>Click Me</button></textarea>
+
+        <button type="button" class="btn primary" id="runCode">
+            Run Code
+        </button>
+
+        <h3>Output Preview</h3>
+
+        <iframe
+            id="htmlPreview"
+            class="preview-frame"
+            title="HTML output preview"
+            sandbox="">
+        </iframe>
+
+        <p class="small-note">
+            Try changing the heading, paragraph or button in the editor
+            and click Run Code to see your changes.
+        </p>
+    </div>
+</section>
+
+
+<!-- EXERCISES -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">ACTIVITY 03</p>
+        <h2>Practical Coding Exercises</h2>
+        <p>Try solving these beginner-friendly coding tasks.</p>
+    </div>
+
+    <div class="learning-card practice-panel">
+        <div class="exercise-item">
+            <h3>Exercise 1: HTML Heading</h3>
+            <p>Create a webpage with a heading that says "My First Website".</p>
+
+            <button type="button" class="btn secondary answer-toggle"
+                data-target="answer1" aria-expanded="false">
+                Show Answer
+            </button>
+
+            <div id="answer1" class="answer-box" hidden>
+                <pre>
+&lt;h1&gt;My First Website&lt;/h1&gt;
+                </pre>
+            </div>
+        </div>
+
+        <div class="exercise-item">
+            <h3>Exercise 2: CSS Background</h3>
+            <p>Change the background colour of a webpage to light blue.</p>
+
+            <button type="button" class="btn secondary answer-toggle"
+                data-target="answer2" aria-expanded="false">
+                Show Answer
+            </button>
+
+            <div id="answer2" class="answer-box" hidden>
+                <pre>
+body {
+    background-color: lightblue;
+}
+                </pre>
+            </div>
+        </div>
+
+        <div class="exercise-item">
+            <h3>Exercise 3: JavaScript Addition</h3>
+            <p>Write a JavaScript program to add two numbers.</p>
+
+            <button type="button" class="btn secondary answer-toggle"
+                data-target="answer3" aria-expanded="false">
+                Show Answer
+            </button>
+
+            <div id="answer3" class="answer-box" hidden>
+                <pre>
+let a = 10;
+let b = 20;
+
+let sum = a + b;
+
+console.log(sum);
+                </pre>
+            </div>
+        </div>
+
+        <div class="exercise-item">
+            <h3>Exercise 4: JavaScript Button</h3>
+            <p>Display a message when a button is clicked.</p>
+
+            <button type="button" class="btn secondary answer-toggle"
+                data-target="answer4" aria-expanded="false">
+                Show Answer
+            </button>
+
+            <div id="answer4" class="answer-box" hidden>
+                <pre>
+document.getElementById("myButton")
+    .addEventListener("click", function() {
+        alert("Button clicked!");
+    });
+                </pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FORM VALIDATION -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">ACTIVITY 04</p>
+        <h2>Student Registration Form</h2>
+        <p>Practise filling a form and checking its information.</p>
+    </div>
+
+    <div class="learning-card practice-panel">
+        <form id="registrationForm" class="practice-form" novalidate>
+
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your name">
+
+            <label for="emailAddress">Email Address</label>
+            <input type="email" id="emailAddress" placeholder="Enter your email">
+
+            <label for="courseName">Choose Course</label>
+            <select id="courseName">
+                <option value="">Select a course</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+
+            <button type="submit" class="btn primary">
+                Submit Registration
+            </button>
+
+            <p id="formMessage" class="practice-result" aria-live="polite">
+                Fill in the details to test the form.
+            </p>
+
+        </form>
+    </div>
+</section>
+
+
+<!-- LEARNING TIPS -->
+<section class="roadmap">
+    <div class="section-heading">
+        <p class="tag">KEEP IMPROVING</p>
+        <h2>Tips for Better Learning</h2>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>1. Practise Regularly</h3>
+        <p>Write small programs every day to improve your skills.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>2. Understand the Code</h3>
+        <p>Try to understand how each line works instead of simply copying it.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>3. Learn from Mistakes</h3>
+        <p>Read error messages and try to understand what went wrong.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>4. Build Small Projects</h3>
+        <p>Use your HTML, CSS and JavaScript knowledge to create webpages.</p>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <h3>CodeCraft Academy</h3>
+    <p>Learn HTML, CSS and JavaScript. Build your ideas into websites.</p>
+    <p>© 2026 CodeCraft Academy. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

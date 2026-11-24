@@ -1,0 +1,796 @@
+
+/* =================================
+   1. BASIC SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0e1225;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =================================
+   2. NAVIGATION BAR
+================================= */
+
+header {
+    background-color: #151a32;
+    border-bottom: 1px solid #292f50;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1250px;
+    margin: auto;
+    padding: 18px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #a78bfa;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #d2d5e8;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+#themeBtn {
+    background: #292f50;
+    color: white;
+    border: 1px solid #555b80;
+    padding: 9px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#themeBtn:hover {
+    background: #7655d9;
+}
+
+
+/* =================================
+   3. HERO SECTION
+================================= */
+
+.hero {
+    max-width: 1250px;
+    margin: auto;
+    padding: 100px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    min-height: 570px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.tagline {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 53px;
+    line-height: 1.2;
+    margin: 22px 0;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero-content p {
+    color: #b7bdd5;
+    font-size: 17px;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 23px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary {
+    background: linear-gradient(135deg, #8056e8, #5d64d9);
+    color: white;
+}
+
+.secondary {
+    border: 1px solid #7779a4;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =================================
+   4. CODE PREVIEW BOX
+================================= */
+
+.hero-code {
+    flex: 0 1 460px;
+    background: #191f3b;
+    border: 1px solid #353c63;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.code-header {
+    background: #252c4b;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.code-header span {
+    color: #f08b9b;
+    font-size: 17px;
+}
+
+.code-header p {
+    margin-left: auto;
+    color: #c4c9df;
+    font-size: 13px;
+}
+
+.code-content {
+    padding: 25px;
+    font-family: Consolas, monospace;
+    color: #d7ddf5;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.code-content p {
+    font-family: Consolas, monospace;
+}
+
+.pink {
+    color: #f08bb5;
+}
+
+.blue {
+    color: #78c7fa;
+}
+
+
+/* =================================
+   5. STATISTICS SECTION
+================================= */
+
+.stats {
+    max-width: 1100px;
+    margin: 0 auto 70px;
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #191f3b;
+    border: 1px solid #353c63;
+    border-radius: 16px;
+}
+
+.stat-box h2 {
+    color: #a78bfa;
+    font-size: 34px;
+}
+
+.stat-box p {
+    color: #b7bdd5;
+    font-size: 14px;
+}
+
+
+/* =================================
+   6. LEARNING SECTION
+================================= */
+
+.learning {
+    max-width: 1250px;
+    margin: auto;
+    padding: 60px 35px 90px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading span {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: #aeb5d0;
+}
+
+.card-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.learning-card {
+    flex: 1;
+    min-width: 250px;
+    background: #191f3b;
+    border: 1px solid #353c63;
+    padding: 32px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.learning-card:hover {
+    transform: translateY(-8px);
+    border-color: #9273ef;
+    box-shadow: 0 12px 30px rgba(91, 73, 175, 0.18);
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.learning-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.learning-card p {
+    color: #b7bdd5;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.learning-card a {
+    color: #a78bfa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.learning-card a:hover {
+    color: #d0bfff;
+}
+
+.html-card {
+    border-top: 3px solid #f08b64;
+}
+
+.css-card {
+    border-top: 3px solid #65aaf5;
+}
+
+.js-card {
+    border-top: 3px solid #e9cf62;
+}
+
+
+/* =================================
+   7. ROADMAP SECTION
+================================= */
+
+.roadmap {
+    background: #151a32;
+    padding: 85px 35px;
+}
+
+.roadmap-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 22px;
+    margin-bottom: 18px;
+    background: #202746;
+    border-radius: 12px;
+    border: 1px solid #353c63;
+    transition: 0.3s;
+}
+
+.roadmap-item:hover {
+    transform: translateX(8px);
+    border-color: #a78bfa;
+}
+
+.roadmap-item > span {
+    min-width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #6246c5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.roadmap-item h3 {
+    font-size: 19px;
+}
+
+.roadmap-item p {
+    color: #b7bdd5;
+    font-size: 14px;
+}
+
+
+/* =================================
+   8. FOOTER
+================================= */
+
+footer {
+    background: #0a0e1d;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    color: #a78bfa;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #aeb5d0;
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #292f50;
+}
+
+
+/* =================================
+   9. RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 65px;
+    }
+
+    .hero-code {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .stats {
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+}
+
+/* =================================
+   10. LIGHT MODE
+================================= */
+
+body.light-mode {
+    background-color: #f3f4fb;
+    color: #202442;
+}
+
+body.light-mode header,
+body.light-mode .roadmap {
+    background-color: #ffffff;
+}
+
+body.light-mode .nav-links a {
+    color: #303653;
+}
+
+body.light-mode .hero-content p,
+body.light-mode .section-heading p,
+body.light-mode .learning-card p,
+body.light-mode .roadmap-item p,
+body.light-mode .stat-box p {
+    color: #555c75;
+}
+
+body.light-mode .stats,
+body.light-mode .learning-card,
+body.light-mode .roadmap-item {
+    background-color: #ffffff;
+    border-color: #dce0ef;
+}
+
+body.light-mode .roadmap-item h3 {
+    color: #202442;
+}
+
+body.light-mode footer {
+    background-color: #e4e7f2;
+}
+
+body.light-mode footer p {
+    color: #555c75;
+}
+
+body.light-mode .secondary {
+    color: #343653;
+    border-color: #7779a4;
+}
+
+/* =================================
+   HTML TABLE DESIGN
+================================= */
+
+.table-container {
+    max-width: 1000px;
+    margin: auto;
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid #353c63;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #191f3b;
+    text-align: left;
+}
+
+th {
+    background: #6246c5;
+    color: white;
+    padding: 18px;
+}
+
+td {
+    padding: 16px 18px;
+    border-bottom: 1px solid #353c63;
+    color: #d2d5e8;
+}
+
+tr:hover td {
+    background: #252c4b;
+}
+
+td:first-child {
+    color: #a78bfa;
+    font-weight: bold;
+}
+
+/* =================================
+   ADDITIONAL HTML PAGE STYLING
+================================= */
+
+.topic-list {
+    padding-left: 22px;
+    color: #c2c8df;
+    line-height: 2.1;
+    font-size: 15px;
+}
+
+.topic-list li::marker {
+    color: #a78bfa;
+}
+
+.demo-form {
+    max-width: 750px;
+    margin: 35px auto 0;
+}
+
+.demo-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.demo-form label {
+    color: #d8d9ed;
+    font-weight: 600;
+}
+
+.demo-form input,
+.demo-form select {
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    border: 1px solid #454c70;
+    background: #10162e;
+    color: white;
+    font-size: 14px;
+}
+
+.demo-form input:focus,
+.demo-form select:focus {
+    outline: 2px solid #9273ef;
+    border-color: #9273ef;
+}
+
+.demo-form button {
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.demo-form p {
+    color: #b7bdd5;
+}
+
+/* PRACTICE ZONE */
+
+.practice-panel {
+    width: 100%;
+    max-width: 850px;
+    margin: 25px auto;
+}
+
+.quiz-question {
+    padding: 20px;
+    margin-bottom: 18px;
+    background: #10162e;
+    border: 1px solid #343c60;
+    border-radius: 12px;
+}
+
+.quiz-question h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.practice-option {
+    display: block;
+    padding: 10px;
+    margin: 8px 0;
+    color: #d8d9ed;
+    background: #191f3b;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.practice-option input {
+    margin-right: 10px;
+    accent-color: #a78bfa;
+}
+
+.practice-option:hover {
+    background: #252d50;
+}
+
+.practice-result {
+    margin: 18px 0;
+    padding: 15px;
+    color: #e4e7ff;
+    background: #10162e;
+    border: 1px solid #454c70;
+    border-radius: 9px;
+    line-height: 1.6;
+}
+
+.code-editor {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 16px;
+    color: #e8eaff;
+    background: #10162e;
+    border: 1px solid #454c70;
+    border-radius: 10px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+.code-editor:focus {
+    outline: 2px solid #9273ef;
+}
+
+.preview-frame {
+    display: block;
+    width: 100%;
+    min-height: 220px;
+    margin-top: 15px;
+    background: white;
+    border: 2px solid #454c70;
+    border-radius: 10px;
+}
+
+.small-note {
+    margin-top: 12px;
+    color: #b7bdd5;
+    font-size: 13px;
+}
+
+.exercise-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #343c60;
+}
+
+.exercise-item:last-child {
+    border-bottom: none;
+}
+
+.exercise-item h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.exercise-item p {
+    color: #c2c8df;
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
+.answer-box {
+    margin-top: 15px;
+    padding: 15px;
+    background: #10162e;
+    border-radius: 9px;
+    overflow-x: auto;
+}
+
+.answer-box pre {
+    color: #d8d9ed;
+    white-space: pre-wrap;
+}
+
+.practice-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.practice-form label {
+    color: #d8d9ed;
+    font-weight: 600;
+}
+
+.practice-form input,
+.practice-form select {
+    width: 100%;
+    padding: 13px;
+    color: white;
+    background: #10162e;
+    border: 1px solid #454c70;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.practice-form input:focus,
+.practice-form select:focus {
+    outline: 2px solid #9273ef;
+}
+
+.practice-form button {
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.btn.secondary {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 11px 18px;
+    color: white;
+    background: #343c60;
+    border: 1px solid #555f89;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn.secondary:hover {
+    background: #4a527c;
+}
+
+@media (max-width: 600px) {
+    .practice-panel {
+        padding: 15px;
+    }
+
+    .quiz-question {
+        padding: 14px;
+    }
+
+    .code-editor {
+        font-size: 12px;
+    }
+}
+

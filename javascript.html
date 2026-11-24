@@ -1,0 +1,985 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript | CodeCraft Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">CodeCraft<span> Academy</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html" class="active">JavaScript</a>
+        <a href="practice.html">Practice Zone</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="tag">MAKE WEBSITES INTERACTIVE</p>
+        <h1>Learn JavaScript and Bring Websites to Life.</h1>
+        <p>
+            JavaScript is a programming language used to make websites
+            interactive and dynamic. It allows websites to respond to
+            user actions, validate forms, display messages and update
+            content without reloading the page.
+        </p>
+        <a href="#js-basics" class="btn primary">Start Learning</a>
+    </div>
+
+    <div class="hero-code">
+        <p>JavaScript Example</p>
+        <pre>
+let name = "Student";
+
+function welcome() {
+    alert("Welcome " + name);
+}
+        </pre>
+        <div class="preview">
+            <h2>JavaScript</h2>
+            <p>Make your ideas interactive!</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- INTRODUCTION -->
+<section class="learning" id="js-basics">
+    <div class="section-heading">
+        <p class="tag">01 - INTRODUCTION</p>
+        <h2>What is JavaScript?</h2>
+        <p>Understand the programming language of the web.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            JavaScript is a high-level programming language commonly
+            used to add functionality and interactivity to websites.
+            It works with HTML and CSS to create complete web experiences.
+        </p>
+
+        <h3>How HTML, CSS and JavaScript Work Together</h3>
+
+        <ul class="topic-list">
+            <li><strong>HTML:</strong> Creates the structure of a webpage.</li>
+            <li><strong>CSS:</strong> Controls the design and appearance.</li>
+            <li><strong>JavaScript:</strong> Adds behaviour and interactivity.</li>
+        </ul>
+
+        <h3>Uses of JavaScript</h3>
+        <ul class="topic-list">
+            <li>Creating interactive buttons and menus.</li>
+            <li>Validating registration and login forms.</li>
+            <li>Building quizzes and calculators.</li>
+            <li>Displaying live updates on webpages.</li>
+            <li>Changing HTML content dynamically.</li>
+            <li>Creating games and web applications.</li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- JAVASCRIPT SYNTAX -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">02 - FUNDAMENTALS</p>
+        <h2>JavaScript Syntax</h2>
+        <p>Learn the basic rules for writing JavaScript code.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            Syntax means the rules that define how a programming
+            language should be written.
+        </p>
+
+        <h3>Example</h3>
+        <pre>
+console.log("Hello World!");
+        </pre>
+
+        <p>
+            The <strong>console.log()</strong> statement displays
+            information in the browser's developer console.
+        </p>
+
+        <h3>Important Points</h3>
+        <ul class="topic-list">
+            <li>JavaScript is case-sensitive.</li>
+            <li>Statements can end with a semicolon.</li>
+            <li>Curly brackets define blocks of code.</li>
+            <li>Comments help explain the code.</li>
+        </ul>
+
+        <h3>Comments in JavaScript</h3>
+        <pre>
+// Single-line comment
+
+/*
+   Multi-line
+   comment
+*/
+        </pre>
+    </div>
+</section>
+
+
+<!-- VARIABLES -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">03 - VARIABLES</p>
+        <h2>Variables in JavaScript</h2>
+        <p>Learn how to store and use information.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            A variable is a named storage location used to hold
+            information such as names, numbers and values.
+        </p>
+
+        <h3>Three Ways to Declare Variables</h3>
+
+        <ul class="topic-list">
+            <li><strong>var:</strong> Older way of declaring variables.</li>
+            <li><strong>let:</strong> Used for values that may change.</li>
+            <li><strong>const:</strong> Used for variables that cannot be reassigned.</li>
+        </ul>
+
+        <h3>Example</h3>
+        <pre>
+let name = "Arjun";
+let age = 18;
+
+const country = "India";
+
+console.log(name);
+console.log(age);
+console.log(country);
+        </pre>
+
+        <p>
+            Here, name stores text, age stores a number and country
+            stores a text value that cannot be reassigned.
+        </p>
+    </div>
+</section>
+
+
+<!-- DATA TYPES -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">04 - DATA TYPES</p>
+        <h2>Data Types in JavaScript</h2>
+        <p>Understand the different kinds of values JavaScript can store.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>Some commonly used JavaScript data types are:</p>
+
+        <table>
+            <tr>
+                <th>Data Type</th>
+                <th>Example</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td>String</td>
+                <td>"Hello"</td>
+                <td>Stores text.</td>
+            </tr>
+            <tr>
+                <td>Number</td>
+                <td>25</td>
+                <td>Stores numbers.</td>
+            </tr>
+            <tr>
+                <td>Boolean</td>
+                <td>true</td>
+                <td>Stores true or false.</td>
+            </tr>
+            <tr>
+                <td>Undefined</td>
+                <td>let x;</td>
+                <td>A declared variable without an assigned value.</td>
+            </tr>
+            <tr>
+                <td>Null</td>
+                <td>null</td>
+                <td>Represents an intentional empty value.</td>
+            </tr>
+            <tr>
+                <td>Object</td>
+                <td>{ name: "Aman" }</td>
+                <td>Stores related information as properties.</td>
+            </tr>
+            <tr>
+                <td>Array</td>
+                <td>[10, 20, 30]</td>
+                <td>Stores an ordered collection of values.</td>
+            </tr>
+        </table>
+
+        <h3>Example</h3>
+        <pre>
+let student = "Rahul";
+let marks = 85;
+let passed = true;
+
+console.log(typeof student);
+console.log(typeof marks);
+console.log(typeof passed);
+        </pre>
+    </div>
+</section>
+
+
+<!-- OPERATORS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">05 - OPERATORS</p>
+        <h2>JavaScript Operators</h2>
+        <p>Operators perform calculations and comparisons.</p>
+    </div>
+
+    <div class="learning-card">
+        <h3>1. Arithmetic Operators</h3>
+        <table>
+            <tr><th>Operator</th><th>Meaning</th><th>Example</th></tr>
+            <tr><td>+</td><td>Addition</td><td>10 + 5 = 15</td></tr>
+            <tr><td>-</td><td>Subtraction</td><td>10 - 5 = 5</td></tr>
+            <tr><td>*</td><td>Multiplication</td><td>10 * 5 = 50</td></tr>
+            <tr><td>/</td><td>Division</td><td>10 / 5 = 2</td></tr>
+            <tr><td>%</td><td>Remainder</td><td>10 % 3 = 1</td></tr>
+            <tr><td>**</td><td>Exponentiation</td><td>2 ** 3 = 8</td></tr>
+        </table>
+
+        <h3>2. Comparison Operators</h3>
+        <ul class="topic-list">
+            <li>== checks equality after type conversion.</li>
+            <li>=== checks equality without type conversion.</li>
+            <li>!= checks inequality after type conversion.</li>
+            <li>!== checks inequality without type conversion.</li>
+            <li>&gt; checks greater than.</li>
+            <li>&lt; checks less than.</li>
+            <li>&gt;= checks greater than or equal to.</li>
+            <li>&lt;= checks less than or equal to.</li>
+        </ul>
+
+        <h3>3. Logical Operators</h3>
+        <ul class="topic-list">
+            <li><strong>&amp;&amp;</strong> AND: Both conditions must be true.</li>
+            <li><strong>||</strong> OR: At least one condition must be true.</li>
+            <li><strong>!</strong> NOT: Reverses a boolean value.</li>
+        </ul>
+
+        <h3>4. Assignment Operators</h3>
+        <pre>
+let x = 10;
+
+x += 5;  // x = x + 5
+x -= 2;  // x = x - 2
+x *= 3;  // x = x * 3
+        </pre>
+    </div>
+</section>
+
+
+<!-- CONDITIONALS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">06 - DECISION MAKING</p>
+        <h2>Conditional Statements</h2>
+        <p>Make decisions based on different conditions.</p>
+    </div>
+
+    <div class="learning-card">
+        <h3>1. if Statement</h3>
+        <p>Executes code only when a condition is true.</p>
+        <pre>
+let age = 18;
+
+if (age >= 18) {
+    console.log("Eligible");
+}
+        </pre>
+
+        <h3>2. if-else Statement</h3>
+        <p>Chooses between two possible blocks of code.</p>
+        <pre>
+let marks = 75;
+
+if (marks >= 40) {
+    console.log("Pass");
+} else {
+    console.log("Fail");
+}
+        </pre>
+
+        <h3>3. else-if Ladder</h3>
+        <p>Checks multiple conditions one by one.</p>
+        <pre>
+let marks = 85;
+
+if (marks >= 90) {
+    console.log("Grade A");
+} else if (marks >= 75) {
+    console.log("Grade B");
+} else if (marks >= 40) {
+    console.log("Grade C");
+} else {
+    console.log("Fail");
+}
+        </pre>
+
+        <h3>4. switch Statement</h3>
+        <p>Useful when comparing one value with several possible cases.</p>
+        <pre>
+let day = 2;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+
+    case 2:
+        console.log("Tuesday");
+        break;
+
+    default:
+        console.log("Other day");
+}
+        </pre>
+
+        <h3>5. Ternary Operator</h3>
+        <p>A shorter way to write a simple if-else condition.</p>
+        <pre>
+let age = 20;
+
+let result = age >= 18
+    ? "Adult"
+    : "Minor";
+
+console.log(result);
+        </pre>
+    </div>
+</section>
+
+
+<!-- LOOPS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">07 - LOOPS</p>
+        <h2>Loops in JavaScript</h2>
+        <p>Repeat a block of code multiple times.</p>
+    </div>
+
+    <div class="learning-card">
+        <h3>1. for Loop</h3>
+        <p>Used when we know how many times we want to repeat code.</p>
+        <pre>
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+        </pre>
+
+        <h3>2. while Loop</h3>
+        <p>Repeats as long as the given condition is true.</p>
+        <pre>
+let i = 1;
+
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+        </pre>
+
+        <h3>3. do-while Loop</h3>
+        <p>Runs the code at least once before checking the condition.</p>
+        <pre>
+let i = 1;
+
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+        </pre>
+
+        <h3>4. for...of Loop</h3>
+        <p>Used to access values from an iterable such as an array.</p>
+        <pre>
+let fruits = ["Apple", "Mango", "Banana"];
+
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+        </pre>
+
+        <h3>Loop Control Statements</h3>
+        <ul class="topic-list">
+            <li><strong>break:</strong> Stops the loop.</li>
+            <li><strong>continue:</strong> Skips the current iteration.</li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- FUNCTIONS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">08 - FUNCTIONS</p>
+        <h2>Functions in JavaScript</h2>
+        <p>Write reusable blocks of code.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            A function is a reusable block of code designed to
+            perform a particular task. It runs when it is called.
+        </p>
+
+        <h3>Function Declaration</h3>
+        <pre>
+function greet() {
+    console.log("Welcome!");
+}
+
+greet();
+        </pre>
+
+        <h3>Function with Parameters</h3>
+        <p>Parameters allow us to pass information into a function.</p>
+        <pre>
+function add(a, b) {
+    console.log(a + b);
+}
+
+add(10, 20);
+        </pre>
+
+        <h3>Return Statement</h3>
+        <p>The return statement sends a result back from a function.</p>
+        <pre>
+function multiply(a, b) {
+    return a * b;
+}
+
+let result = multiply(4, 5);
+console.log(result);
+        </pre>
+
+        <h3>Arrow Function</h3>
+        <p>A shorter way to write many functions.</p>
+        <pre>
+const greet = () => {
+    console.log("Hello!");
+};
+
+greet();
+        </pre>
+    </div>
+</section>
+
+
+<!-- ARRAYS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">09 - ARRAYS</p>
+        <h2>Arrays in JavaScript</h2>
+        <p>Store multiple values inside a single variable.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            An array is an ordered collection of values. Each value
+            has an index, and array indexing starts from zero.
+        </p>
+
+        <h3>Creating an Array</h3>
+        <pre>
+let fruits = ["Apple", "Mango", "Banana"];
+
+console.log(fruits[0]);
+console.log(fruits[1]);
+        </pre>
+
+        <h3>Common Array Methods</h3>
+        <table>
+            <tr><th>Method</th><th>Purpose</th></tr>
+            <tr><td>push()</td><td>Adds an item at the end.</td></tr>
+            <tr><td>pop()</td><td>Removes the last item.</td></tr>
+            <tr><td>unshift()</td><td>Adds an item at the beginning.</td></tr>
+            <tr><td>shift()</td><td>Removes the first item.</td></tr>
+            <tr><td>includes()</td><td>Checks whether a value exists.</td></tr>
+            <tr><td>indexOf()</td><td>Finds the index of a value.</td></tr>
+            <tr><td>join()</td><td>Combines array values into a string.</td></tr>
+        </table>
+
+        <h3>Example</h3>
+        <pre>
+let numbers = [10, 20, 30];
+
+numbers.push(40);
+
+console.log(numbers);
+        </pre>
+    </div>
+</section>
+
+
+<!-- OBJECTS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">10 - OBJECTS</p>
+        <h2>Objects in JavaScript</h2>
+        <p>Organise related information using properties and values.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            An object stores related information in the form of
+            key-value pairs. It can also contain functions called methods.
+        </p>
+
+        <h3>Example</h3>
+        <pre>
+let student = {
+    name: "Aman",
+    age: 18,
+    course: "Computer Science"
+};
+
+console.log(student.name);
+console.log(student.age);
+        </pre>
+
+        <h3>Updating an Object Property</h3>
+        <pre>
+student.age = 19;
+
+console.log(student.age);
+        </pre>
+    </div>
+</section>
+
+
+<!-- STRINGS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">11 - STRINGS</p>
+        <h2>String Methods</h2>
+        <p>Work with text values using built-in methods.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>A string is a sequence of characters used to represent text.</p>
+
+        <table>
+            <tr><th>Method or Property</th><th>Purpose</th></tr>
+            <tr><td>length</td><td>Returns the number of characters.</td></tr>
+            <tr><td>toUpperCase()</td><td>Converts text to uppercase.</td></tr>
+            <tr><td>toLowerCase()</td><td>Converts text to lowercase.</td></tr>
+            <tr><td>trim()</td><td>Removes whitespace from both ends.</td></tr>
+            <tr><td>includes()</td><td>Checks whether text contains another string.</td></tr>
+            <tr><td>slice()</td><td>Extracts part of a string.</td></tr>
+            <tr><td>replace()</td><td>Replaces matching text.</td></tr>
+        </table>
+
+        <h3>Example</h3>
+        <pre>
+let message = "Hello JavaScript";
+
+console.log(message.length);
+console.log(message.toUpperCase());
+console.log(message.toLowerCase());
+        </pre>
+    </div>
+</section>
+
+
+<!-- DOM -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">12 - DOM MANIPULATION</p>
+        <h2>Document Object Model (DOM)</h2>
+        <p>Understand how JavaScript interacts with HTML elements.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            DOM stands for Document Object Model. It represents the
+            webpage as a tree of objects. JavaScript can use the DOM
+            to read and change webpage content, styles and elements.
+        </p>
+
+        <h3>Important DOM Methods</h3>
+        <ul class="topic-list">
+            <li><strong>getElementById():</strong> Selects an element using its ID.</li>
+            <li><strong>getElementsByClassName():</strong> Selects elements by class.</li>
+            <li><strong>getElementsByTagName():</strong> Selects elements by tag name.</li>
+            <li><strong>querySelector():</strong> Selects the first matching CSS selector.</li>
+            <li><strong>querySelectorAll():</strong> Selects all matching elements.</li>
+        </ul>
+
+        <h3>Changing HTML Content</h3>
+        <pre>
+document.getElementById("heading").innerText =
+    "Welcome to JavaScript!";
+        </pre>
+
+        <h3>Changing CSS with JavaScript</h3>
+        <pre>
+document.getElementById("heading").style.color = "purple";
+        </pre>
+
+        <h3>Creating an HTML Element</h3>
+        <pre>
+let newPara = document.createElement("p");
+
+newPara.innerText = "This is a new paragraph.";
+
+document.body.appendChild(newPara);
+        </pre>
+    </div>
+</section>
+
+
+<!-- EVENTS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">13 - EVENTS</p>
+        <h2>JavaScript Events</h2>
+        <p>Respond to actions performed by website visitors.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            Events are actions or occurrences that happen in the browser.
+            JavaScript can detect these events and run code in response.
+        </p>
+
+        <table>
+            <tr><th>Event</th><th>Meaning</th></tr>
+            <tr><td>click</td><td>When an element is clicked.</td></tr>
+            <tr><td>mouseover</td><td>When the pointer moves over an element.</td></tr>
+            <tr><td>mouseout</td><td>When the pointer leaves an element.</td></tr>
+            <tr><td>keydown</td><td>When a keyboard key is pressed.</td></tr>
+            <tr><td>submit</td><td>When a form is submitted.</td></tr>
+            <tr><td>change</td><td>When an input value changes.</td></tr>
+            <tr><td>load</td><td>When a resource or page finishes loading.</td></tr>
+        </table>
+
+        <h3>Example: Click Event</h3>
+        <pre>
+document.getElementById("myButton")
+    .addEventListener("click", function() {
+        alert("Button clicked!");
+    });
+        </pre>
+    </div>
+</section>
+
+
+<!-- FORMS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">14 - FORM HANDLING</p>
+        <h2>Form Handling and Validation</h2>
+        <p>Collect and check information entered by users.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            JavaScript can read form values and check whether the
+            information entered by a user meets certain conditions.
+        </p>
+
+        <h3>Example</h3>
+        <pre>
+let name = document.getElementById("name").value;
+
+if (name.trim() === "") {
+    alert("Please enter your name");
+} else {
+    alert("Form submitted!");
+}
+        </pre>
+
+        <h3>Why is Form Validation Useful?</h3>
+        <ul class="topic-list">
+            <li>Checks whether required fields are filled.</li>
+            <li>Checks whether an email follows a valid format.</li>
+            <li>Helps prevent incomplete submissions.</li>
+            <li>Displays helpful messages to users.</li>
+        </ul>
+
+        <p>
+            Client-side validation improves user experience, but
+            important data must also be validated on the server.
+        </p>
+    </div>
+</section>
+
+
+<!-- MATH AND DATE -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">15 - BUILT-IN OBJECTS</p>
+        <h2>Math and Date Objects</h2>
+        <p>Use JavaScript's built-in features for calculations and dates.</p>
+    </div>
+
+    <div class="learning-card">
+        <h3>Math Object</h3>
+        <p>Provides useful mathematical operations.</p>
+        <pre>
+console.log(Math.round(4.6));
+console.log(Math.floor(4.9));
+console.log(Math.ceil(4.1));
+console.log(Math.max(10, 20, 30));
+console.log(Math.min(10, 20, 30));
+        </pre>
+
+        <h3>Date Object</h3>
+        <p>Used to work with dates and time.</p>
+        <pre>
+let today = new Date();
+
+console.log(today);
+console.log(today.getFullYear());
+console.log(today.getMonth());
+console.log(today.getDate());
+        </pre>
+
+        <p>
+            Note: getMonth() returns values from 0 to 11,
+            where January is 0 and December is 11.
+        </p>
+    </div>
+</section>
+
+
+<!-- JSON -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">16 - DATA FORMAT</p>
+        <h2>Introduction to JSON</h2>
+        <p>Understand a common format for exchanging information.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            JSON stands for JavaScript Object Notation. It is a
+            lightweight text format used to store and exchange data.
+        </p>
+
+        <h3>Example JSON Data</h3>
+        <pre>
+{
+    "name": "Aman",
+    "age": 18,
+    "course": "Computer Science"
+}
+        </pre>
+
+        <h3>Convert JSON into a JavaScript Object</h3>
+        <pre>
+let data = '{"name":"Aman","age":18}';
+
+let student = JSON.parse(data);
+
+console.log(student.name);
+        </pre>
+
+        <h3>Convert an Object into JSON</h3>
+        <pre>
+let student = {
+    name: "Aman",
+    age: 18
+};
+
+let jsonData = JSON.stringify(student);
+
+console.log(jsonData);
+        </pre>
+    </div>
+</section>
+
+
+<!-- STORAGE -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">17 - BROWSER STORAGE</p>
+        <h2>Local Storage</h2>
+        <p>Store small amounts of information in the browser.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            Local Storage allows a website to store key-value data
+            in the user's browser. The data normally remains available
+            after the browser is closed and reopened.
+        </p>
+
+        <h3>Storing Data</h3>
+        <pre>
+localStorage.setItem("username", "Aman");
+        </pre>
+
+        <h3>Reading Data</h3>
+        <pre>
+let user = localStorage.getItem("username");
+
+console.log(user);
+        </pre>
+
+        <h3>Removing Data</h3>
+        <pre>
+localStorage.removeItem("username");
+        </pre>
+
+        <p>
+            Do not store passwords or sensitive personal information
+            in Local Storage.
+        </p>
+    </div>
+</section>
+
+
+<!-- ERROR HANDLING -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">18 - ERROR HANDLING</p>
+        <h2>JavaScript Error Handling</h2>
+        <p>Handle unexpected errors in a controlled way.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            Error handling helps a program respond to problems
+            instead of stopping unexpectedly.
+        </p>
+
+        <h3>try...catch</h3>
+        <pre>
+try {
+    let result = unknownFunction();
+    console.log(result);
+} catch (error) {
+    console.log("Something went wrong.");
+}
+        </pre>
+
+        <h3>finally</h3>
+        <p>
+            The finally block runs after try and catch, whether
+            an error occurs or not.
+        </p>
+        <pre>
+try {
+    console.log("Program started");
+} catch (error) {
+    console.log("Error occurred");
+} finally {
+    console.log("Program finished");
+}
+        </pre>
+    </div>
+</section>
+
+
+<!-- PRACTICAL EXAMPLE -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">19 - PRACTICAL APPLICATION</p>
+        <h2>Putting JavaScript Together</h2>
+        <p>See how JavaScript can make an HTML button interactive.</p>
+    </div>
+
+    <div class="learning-card">
+        <h3>HTML</h3>
+        <pre>
+&lt;h2 id="message"&gt;Welcome!&lt;/h2&gt;
+
+&lt;button id="changeButton"&gt;
+    Click Me
+&lt;/button&gt;
+        </pre>
+
+        <h3>JavaScript</h3>
+        <pre>
+document.getElementById("changeButton")
+    .addEventListener("click", function() {
+
+        document.getElementById("message").innerText =
+            "You clicked the button!";
+
+    });
+        </pre>
+
+        <p>
+            When the user clicks the button, JavaScript changes
+            the heading text without reloading the webpage.
+        </p>
+    </div>
+</section>
+
+
+<!-- EXERCISES -->
+<section class="roadmap">
+    <div class="section-heading">
+        <p class="tag">20 - TEST YOUR KNOWLEDGE</p>
+        <h2>JavaScript Practice Exercises</h2>
+        <p>Apply the concepts you have learned.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>Exercise 1: Personal Introduction</h3>
+        <p>Create variables for your name, age and course. Display them in the console.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>Exercise 2: Even or Odd</h3>
+        <p>Write a program that checks whether a number is even or odd.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>Exercise 3: Multiplication Table</h3>
+        <p>Use a for loop to print the multiplication table of a number.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>Exercise 4: Calculator</h3>
+        <p>Create a simple calculator using functions and operators.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>Exercise 5: Interactive Button</h3>
+        <p>Use DOM manipulation and an event listener to change webpage content.</p>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <h3>CodeCraft Academy</h3>
+    <p>Learn HTML, CSS and JavaScript. Build your ideas into websites.</p>
+    <p>© 2026 CodeCraft Academy. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

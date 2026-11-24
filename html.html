@@ -1,0 +1,843 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learn HTML | CodeCraft Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">&lt;/&gt; CodeCraft</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="practice.html">Practice</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HTML Introduction -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="tagline">LEARN THE FUNDAMENTALS</span>
+
+                <h1>
+                    Master <span>HTML</span>
+                </h1>
+
+                <p>
+                    HTML is the foundation of every website.
+                    Learn how to structure webpages using
+                    elements, tags, attributes and more.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#basics" class="btn primary">
+                        Start Learning →
+                    </a>
+
+                    <a href="#examples" class="btn secondary">
+                        View Examples
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-code">
+
+                <div class="code-header">
+                    <span>●</span>
+                    <span>●</span>
+                    <span>●</span>
+                    <p>hello.html</p>
+                </div>
+
+                <div class="code-content">
+                    <p><span class="pink">&lt;h1&gt;</span></p>
+                    <p>Hello World!</p>
+                    <p><span class="pink">&lt;/h1&gt;</span></p>
+                    <p><span class="blue">&lt;p&gt;</span></p>
+                    <p>Welcome to HTML</p>
+                    <p><span class="blue">&lt;/p&gt;</span></p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Introduction -->
+        <section class="learning" id="basics">
+
+            <div class="section-heading">
+                <span>HTML FUNDAMENTALS</span>
+                <h2>What is HTML?</h2>
+            </div>
+
+            <div class="learning-card">
+
+                <h3>Introduction to HTML</h3>
+
+                <p>
+                    HTML stands for HyperText Markup Language.
+                    It is used to create the structure of
+                    webpages. It tells the browser how to
+                    display headings, paragraphs, images,
+                    links, tables and other content.
+                </p>
+
+                <p>
+                    HTML is a markup language, not a
+                    programming language.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- HTML Structure -->
+        <section class="learning">
+
+            <div class="section-heading">
+                <span>UNDERSTANDING THE CODE</span>
+                <h2>Basic HTML Structure</h2>
+            </div>
+
+            <div class="hero-code">
+
+                <div class="code-header">
+                    <p>basic-structure.html</p>
+                </div>
+
+                <div class="code-content">
+                    <p>&lt;!DOCTYPE html&gt;</p>
+                    <p>&lt;html&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;head&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Page&lt;/title&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;/head&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;body&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;My first page&lt;/p&gt;</p>
+                    <p>&nbsp;&nbsp;&lt;/body&gt;</p>
+                    <p>&lt;/html&gt;</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HTML Elements -->
+        <section class="learning">
+
+            <div class="section-heading">
+                <span>IMPORTANT ELEMENTS</span>
+                <h2>Common HTML Tags</h2>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <tr>
+                        <th>HTML Tag</th>
+                        <th>Purpose</th>
+                        <th>Example</th>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>Main heading</td>
+                        <td>Heading</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Paragraph</td>
+                        <td>Text content</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;a&gt;</td>
+                        <td>Hyperlink</td>
+                        <td>Website link</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Display image</td>
+                        <td>Picture</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Unordered list</td>
+                        <td>Bullet points</td>
+                    </tr>
+
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Create tables</td>
+                        <td>Tabular data</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- HTML Lists -->
+        <section class="learning">
+
+            <div class="section-heading">
+                <span>ORGANIZING CONTENT</span>
+                <h2>HTML Lists</h2>
+            </div>
+
+            <div class="card-container">
+
+                <div class="learning-card">
+                    <h3>Ordered List</h3>
+                    <p>Used when items need numbering.</p>
+
+                    <div class="code-content">
+                        &lt;ol&gt;<br>
+                        &nbsp;&lt;li&gt;HTML&lt;/li&gt;<br>
+                        &nbsp;&lt;li&gt;CSS&lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                    </div>
+                </div>
+
+                <div class="learning-card">
+                    <h3>Unordered List</h3>
+                    <p>Used to display bullet points.</p>
+
+                    <div class="code-content">
+                        &lt;ul&gt;<br>
+                        &nbsp;&lt;li&gt;HTML&lt;/li&gt;<br>
+                        &nbsp;&lt;li&gt;CSS&lt;/li&gt;<br>
+                        &lt;/ul&gt;
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HTML Examples -->
+        <section class="learning" id="examples">
+
+            <div class="section-heading">
+                <span>LEARN BY EXAMPLES</span>
+                <h2>Practical HTML Examples</h2>
+            </div>
+
+            <div class="card-container">
+
+                <div class="learning-card">
+                    <h3>Example 1: Heading</h3>
+                    <p>&lt;h1&gt;Welcome&lt;/h1&gt;</p>
+                    <p><strong>Output: Welcome</strong></p>
+                </div>
+
+                <div class="learning-card">
+                    <h3>Example 2: Paragraph</h3>
+                    <p>&lt;p&gt;Learning HTML&lt;/p&gt;</p>
+                    <p><strong>Output: Learning HTML</strong></p>
+                </div>
+
+                <div class="learning-card">
+                    <h3>Example 3: Link</h3>
+                    <p>&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</p>
+                    <p><strong>Output: Visit (clickable link)</strong></p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Exercises -->
+        <section class="roadmap">
+
+            <div class="section-heading">
+                <span>TEST YOUR KNOWLEDGE</span>
+                <h2>HTML Practice Exercises</h2>
+            </div>
+
+            <div class="roadmap-container">
+
+                <div class="roadmap-item">
+                    <span>01</span>
+                    <div>
+                        <h3>Create a Personal Webpage</h3>
+                        <p>Use headings, paragraphs and images.</p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <span>02</span>
+                    <div>
+                        <h3>Create a Shopping List</h3>
+                        <p>Use ordered and unordered lists.</p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <span>03</span>
+                    <div>
+                        <h3>Create a Student Table</h3>
+                        <p>Use table, tr, th and td elements.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- HTML Elements and Attributes -->
+<section class="learning">
+
+    <div class="section-heading">
+        <span>UNDERSTANDING HTML</span>
+        <h2>Elements and Attributes</h2>
+        <p>Learn how HTML elements are created and customized.</p>
+    </div>
+
+    <div class="card-container">
+
+        <div class="learning-card">
+            <h3>HTML Elements</h3>
+            <p>An HTML element usually consists of an opening tag,
+            content and a closing tag.</p>
+
+            <div class="code-content">
+                &lt;p&gt;Hello World&lt;/p&gt;
+            </div>
+
+            <p><strong>Example:</strong> A paragraph element.</p>
+        </div>
+
+        <div class="learning-card">
+            <h3>HTML Attributes</h3>
+            <p>Attributes provide additional information about
+            HTML elements.</p>
+
+            <div class="code-content">
+                &lt;a href="https://example.com"&gt;Visit&lt;/a&gt;
+            </div>
+
+            <p><strong>Example:</strong> href defines the link destination.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Text Formatting -->
+<section class="learning">
+
+    <div class="section-heading">
+        <span>TEXT FORMATTING</span>
+        <h2>HTML Text Formatting Tags</h2>
+        <p>Use different tags to format and highlight webpage content.</p>
+    </div>
+
+    <div class="table-container">
+
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Purpose</th>
+                <th>Example Output</th>
+            </tr>
+
+            <tr>
+                <td>&lt;b&gt;</td>
+                <td>Bold text</td>
+                <td><b>Bold Text</b></td>
+            </tr>
+
+            <tr>
+                <td>&lt;i&gt;</td>
+                <td>Italic text</td>
+                <td><i>Italic Text</i></td>
+            </tr>
+
+            <tr>
+                <td>&lt;u&gt;</td>
+                <td>Underlined text</td>
+                <td><u>Underlined Text</u></td>
+            </tr>
+
+            <tr>
+                <td>&lt;strong&gt;</td>
+                <td>Important text</td>
+                <td><strong>Important</strong></td>
+            </tr>
+
+            <tr>
+                <td>&lt;em&gt;</td>
+                <td>Emphasized text</td>
+                <td><em>Emphasized</em></td>
+            </tr>
+
+            <tr>
+                <td>&lt;mark&gt;</td>
+                <td>Highlighted text</td>
+                <td><mark>Highlighted</mark></td>
+            </tr>
+
+            <tr>
+                <td>&lt;del&gt;</td>
+                <td>Deleted text</td>
+                <td><del>Deleted</del></td>
+            </tr>
+
+            <tr>
+                <td>&lt;sup&gt;</td>
+                <td>Superscript</td>
+                <td>X<sup>2</sup></td>
+            </tr>
+
+            <tr>
+                <td>&lt;sub&gt;</td>
+                <td>Subscript</td>
+                <td>H<sub>2</sub>O</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- Links and Images -->
+<section class="learning">
+
+    <div class="section-heading">
+        <span>CONNECT AND DISPLAY</span>
+        <h2>Links and Images</h2>
+        <p>Learn how to connect webpages and display pictures.</p>
+    </div>
+
+    <div class="card-container">
+
+        <div class="learning-card">
+            <h3>Hyperlinks</h3>
+            <p>The anchor tag is used to create clickable links
+            to other pages or websites.</p>
+
+            <div class="code-content">
+                &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+            </div>
+
+            <a href="index.html">Example: Go to Home →</a>
+        </div>
+
+        <div class="learning-card">
+            <h3>Images</h3>
+            <p>The image tag displays pictures on a webpage.
+            It uses src and alt attributes.</p>
+
+            <div class="code-content">
+                &lt;img src="photo.jpg" alt="My Photo"&gt;
+            </div>
+
+            <p>Alt text describes an image if it cannot be displayed.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HTML Tables -->
+<section class="learning">
+
+    <div class="section-heading">
+        <span>DATA PRESENTATION</span>
+        <h2>Understanding HTML Tables</h2>
+        <p>Tables organize information into rows and columns.</p>
+    </div>
+
+    <div class="learning-card">
+        <h3>Important Table Tags</h3>
+
+        <ul class="topic-list">
+            <li><b>&lt;table&gt;</b> – Creates a table.</li>
+            <li><b>&lt;tr&gt;</b> – Creates a table row.</li>
+            <li><b>&lt;th&gt;</b> – Creates a heading cell.</li>
+            <li><b>&lt;td&gt;</b> – Creates a data cell.</li>
+            <li><b>&lt;caption&gt;</b> – Adds a table caption.</li>
+            <li><b>&lt;thead&gt;</b> – Groups header rows.</li>
+            <li><b>&lt;tbody&gt;</b> – Groups table body rows.</li>
+            <li><b>&lt;tfoot&gt;</b> – Groups footer rows.</li>
+        </ul>
+    </div>
+
+</section>
+
+
+<!-- HTML Forms -->
+<section class="learning">
+
+    <div class="section-heading">
+        <span>USER INTERACTION</span>
+        <h2>HTML Forms</h2>
+        <p>Forms collect information from website visitors.</p>
+    </div>
+
+    <div class="card-container">
+
+        <div class="learning-card">
+            <h3>Common Input Types</h3>
+
+            <ul class="topic-list">
+                <li>Text – Enter names and other text.</li>
+                <li>Password – Enter passwords.</li>
+                <li>Email – Enter email addresses.</li>
+                <li>Number – Enter numerical values.</li>
+                <li>Radio – Select one option.</li>
+                <li>Checkbox – Select multiple options.</li>
+                <li>Date – Select a date.</li>
+                <li>Submit – Submit the form.</li>
+            </ul>
+        </div>
+
+        <div class="learning-card">
+            <h3>Basic Form Example</h3>
+
+            <div class="code-content">
+                &lt;form&gt;<br>
+                &nbsp;&lt;label&gt;Name:&lt;/label&gt;<br>
+                &nbsp;&lt;input type="text"&gt;<br>
+                &nbsp;&lt;label&gt;Email:&lt;/label&gt;<br>
+                &nbsp;&lt;input type="email"&gt;<br>
+                &nbsp;&lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                &lt;/form&gt;
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Demonstration Form -->
+    <div class="learning-card demo-form">
+
+        <h3>Try a Registration Form</h3>
+        <p>This is a sample HTML form demonstration.</p>
+
+        <form onsubmit="event.preventDefault(); alert('Form submitted successfully!');">
+
+            <label for="studentName">Full Name</label>
+            <input type="text" id="studentName"
+                   placeholder="Enter your name" required>
+
+            <label for="studentEmail">Email Address</label>
+            <input type="email" id="studentEmail"
+                   placeholder="Enter your email" required>
+
+            <label for="studentCourse">Choose a Course</label>
+            <select id="studentCourse" required>
+                <option value="">Select Course</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </select>
+
+            <button type="submit" class="btn primary">
+                Submit Registration
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- Semantic HTML -->
+<section class="learning">
+
+    <div class="section-heading">
+        <span>HTML5 FEATURES</span>
+        <h2>Semantic HTML Elements</h2>
+        <p>Semantic elements describe the purpose of different
+        parts of a webpage.</p>
+    </div>
+
+    <div class="table-container">
+
+        <table>
+            <tr>
+                <th>Element</th>
+                <th>Purpose</th>
+            </tr>
+
+            <tr>
+                <td>&lt;header&gt;</td>
+                <td>Defines the header of a page or section.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;nav&gt;</td>
+                <td>Defines navigation links.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;main&gt;</td>
+                <td>Defines the main page content.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;section&gt;</td>
+                <td>Groups related content.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;article&gt;</td>
+                <td>Defines independent content.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;aside&gt;</td>
+                <td>Defines related side content.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;footer&gt;</td>
+                <td>Defines the footer.</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- Audio and Video -->
+<section class="learning">
+
+    <div class="section-heading">
+        <span>MULTIMEDIA IN HTML</span>
+        <h2>Audio and Video Elements</h2>
+        <p>HTML5 allows multimedia content to be added directly
+        to webpages.</p>
+    </div>
+
+    <div class="card-container">
+
+        <div class="learning-card">
+            <h3>Audio Element</h3>
+            <p>Used to add audio files to a webpage.</p>
+
+            <div class="code-content">
+                &lt;audio controls&gt;<br>
+                &nbsp;&lt;source src="music.mp3" type="audio/mpeg"&gt;<br>
+                &lt;/audio&gt;
+            </div>
+        </div>
+
+        <div class="learning-card">
+            <h3>Video Element</h3>
+            <p>Used to display videos on a webpage.</p>
+
+            <div class="code-content">
+                &lt;video controls width="300"&gt;<br>
+                &nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+                &lt;/video&gt;
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Block and Inline Elements -->
+<section class="learning">
+
+    <div class="section-heading">
+        <span>HTML CONCEPTS</span>
+        <h2>Block-Level and Inline Elements</h2>
+    </div>
+
+    <div class="card-container">
+
+        <div class="learning-card">
+            <h3>Block-Level Elements</h3>
+            <p>These elements generally start on a new line
+            and occupy the available width.</p>
+
+            <ul class="topic-list">
+                <li>&lt;div&gt;</li>
+                <li>&lt;p&gt;</li>
+                <li>&lt;h1&gt; to &lt;h6&gt;</li>
+                <li>&lt;section&gt;</li>
+                <li>&lt;article&gt;</li>
+            </ul>
+        </div>
+
+        <div class="learning-card">
+            <h3>Inline Elements</h3>
+            <p>These elements generally occupy only the space
+            needed by their content.</p>
+
+            <ul class="topic-list">
+                <li>&lt;span&gt;</li>
+                <li>&lt;a&gt;</li>
+                <li>&lt;strong&gt;</li>
+                <li>&lt;em&gt;</li>
+                <li>&lt;img&gt;</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HTML Entities -->
+<section class="learning">
+
+    <div class="section-heading">
+        <span>SPECIAL CHARACTERS</span>
+        <h2>HTML Entities and Symbols</h2>
+        <p>Entities help display reserved characters and
+        special symbols in HTML.</p>
+    </div>
+
+    <div class="table-container">
+
+        <table>
+            <tr>
+                <th>Entity</th>
+                <th>Displayed Symbol</th>
+                <th>Meaning</th>
+            </tr>
+
+            <tr>
+                <td>&amp;lt;</td>
+                <td>&lt;</td>
+                <td>Less than</td>
+            </tr>
+
+            <tr>
+                <td>&amp;gt;</td>
+                <td>&gt;</td>
+                <td>Greater than</td>
+            </tr>
+
+            <tr>
+                <td>&amp;amp;</td>
+                <td>&amp;</td>
+                <td>Ampersand</td>
+            </tr>
+
+            <tr>
+                <td>&amp;nbsp;</td>
+                <td>Space</td>
+                <td>Non-breaking space</td>
+            </tr>
+
+            <tr>
+                <td>&amp;copy;</td>
+                <td>&copy;</td>
+                <td>Copyright symbol</td>
+            </tr>
+
+            <tr>
+                <td>&amp;reg;</td>
+                <td>&reg;</td>
+                <td>Registered symbol</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<!-- Comments and Special Elements -->
+<section class="learning">
+
+    <div class="section-heading">
+        <span>MORE HTML FEATURES</span>
+        <h2>Comments and Special Elements</h2>
+    </div>
+
+    <div class="card-container">
+
+        <div class="learning-card">
+            <h3>HTML Comments</h3>
+            <p>Comments are notes written in the source code.
+            They are not displayed on the webpage.</p>
+
+            <div class="code-content">
+                &lt;!-- This is a comment --&gt;
+            </div>
+        </div>
+
+        <div class="learning-card">
+            <h3>Other Useful Elements</h3>
+
+            <ul class="topic-list">
+                <li>&lt;br&gt; – Line break.</li>
+                <li>&lt;hr&gt; – Horizontal line.</li>
+                <li>&lt;pre&gt; – Preformatted text.</li>
+                <li>&lt;div&gt; – Generic block container.</li>
+                <li>&lt;span&gt; – Generic inline container.</li>
+                <li>&lt;iframe&gt; – Embeds another webpage.</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+
+    <footer>
+
+        <h2>&lt;/&gt; CodeCraft Academy</h2>
+
+        <p>Learn HTML. Style with CSS. Create with JavaScript.</p>
+
+        <p class="copyright">
+            © 2026 CodeCraft Academy
+        </p>
+
+    </footer>
+
+</body>
+</html>

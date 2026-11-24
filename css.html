@@ -1,0 +1,792 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS | CodeCraft Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">CodeCraft<span> Academy</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html" class="active">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="practice.html">Practice Zone</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="tag">DESIGN THE WEB</p>
+        <h1>Learn CSS and Make Websites Beautiful.</h1>
+        <p>
+            CSS stands for Cascading Style Sheets. It is used to style
+            HTML elements and control how a website looks. With CSS,
+            we can add colours, backgrounds, spacing, animations,
+            layouts and responsive designs.
+        </p>
+        <a href="#css-basics" class="btn primary">Start Learning</a>
+    </div>
+
+    <div class="hero-code">
+        <p>CSS Example</p>
+        <pre>
+h1 {
+    color: purple;
+    font-size: 36px;
+    text-align: center;
+}
+        </pre>
+        <div class="preview">
+            <h2>Welcome to CSS!</h2>
+            <p>Style your imagination.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- INTRODUCTION -->
+<section class="learning" id="css-basics">
+    <div class="section-heading">
+        <p class="tag">01 - INTRODUCTION</p>
+        <h2>What is CSS?</h2>
+        <p>Understanding the language that gives websites their appearance.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            CSS is a stylesheet language used to describe the presentation
+            of an HTML document. HTML creates the structure of a webpage,
+            while CSS controls its appearance.
+        </p>
+
+        <p><strong>For example:</strong></p>
+        <ul class="topic-list">
+            <li>HTML creates a heading.</li>
+            <li>CSS changes the heading's colour and size.</li>
+            <li>HTML creates a button.</li>
+            <li>CSS gives the button a background, border and hover effect.</li>
+        </ul>
+
+        <h3>Why is CSS important?</h3>
+        <ul class="topic-list">
+            <li>Makes websites attractive and organised.</li>
+            <li>Controls colours, fonts and backgrounds.</li>
+            <li>Creates layouts using Flexbox and Grid.</li>
+            <li>Makes websites responsive on different devices.</li>
+            <li>Adds transitions and animations.</li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- CSS SYNTAX -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">02 - CSS FUNDAMENTALS</p>
+        <h2>CSS Syntax and Structure</h2>
+        <p>Learn how CSS instructions are written.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>A CSS rule contains three main parts:</p>
+        <ol class="topic-list">
+            <li><strong>Selector:</strong> Selects the HTML element to style.</li>
+            <li><strong>Property:</strong> Specifies what you want to change.</li>
+            <li><strong>Value:</strong> Defines how that property should look.</li>
+        </ol>
+
+        <pre>
+h1 {
+    color: blue;
+    font-size: 30px;
+}
+        </pre>
+
+        <p>
+            Here, <strong>h1</strong> is the selector, <strong>color</strong>
+            and <strong>font-size</strong> are properties, and
+            <strong>blue</strong> and <strong>30px</strong> are their values.
+        </p>
+    </div>
+</section>
+
+
+<!-- TYPES OF CSS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">03 - APPLICATION METHODS</p>
+        <h2>Three Ways to Apply CSS</h2>
+        <p>CSS can be added to HTML in three different ways.</p>
+    </div>
+
+    <div class="card-container">
+
+        <div class="learning-card">
+            <h3>1. Inline CSS</h3>
+            <p>
+                Inline CSS is written directly inside an HTML element
+                using the style attribute.
+            </p>
+            <pre>
+&lt;h1 style="color:red;"&gt;
+    Hello World
+&lt;/h1&gt;
+            </pre>
+            <p><strong>Use:</strong> Styling a single element.</p>
+        </div>
+
+        <div class="learning-card">
+            <h3>2. Internal CSS</h3>
+            <p>
+                Internal CSS is written inside the style tag in the
+                head section of an HTML document.
+            </p>
+            <pre>
+&lt;style&gt;
+h1 {
+    color: green;
+}
+&lt;/style&gt;
+            </pre>
+            <p><strong>Use:</strong> Styling one individual webpage.</p>
+        </div>
+
+        <div class="learning-card">
+            <h3>3. External CSS</h3>
+            <p>
+                External CSS is written in a separate .css file and
+                connected to HTML using the link tag.
+            </p>
+            <pre>
+&lt;link rel="stylesheet"
+href="style.css"&gt;
+            </pre>
+            <p><strong>Use:</strong> Styling multiple webpages consistently.</p>
+        </div>
+
+    </div>
+
+    <div class="learning-card">
+        <h3>Which method is best?</h3>
+        <p>
+            External CSS is generally preferred for larger websites
+            because it keeps HTML and CSS separate, makes code easier
+            to maintain and allows one stylesheet to style multiple pages.
+        </p>
+    </div>
+</section>
+
+
+<!-- SELECTORS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">04 - SELECTORS</p>
+        <h2>CSS Selectors</h2>
+        <p>Selectors help us choose which HTML elements should be styled.</p>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Selector</th>
+                <th>Example</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>Element Selector</td>
+                <td>p { }</td>
+                <td>Selects all paragraph elements.</td>
+            </tr>
+            <tr>
+                <td>Class Selector</td>
+                <td>.box { }</td>
+                <td>Selects elements having class="box".</td>
+            </tr>
+            <tr>
+                <td>ID Selector</td>
+                <td>#header { }</td>
+                <td>Selects the element with id="header".</td>
+            </tr>
+            <tr>
+                <td>Universal Selector</td>
+                <td>* { }</td>
+                <td>Selects all elements.</td>
+            </tr>
+            <tr>
+                <td>Group Selector</td>
+                <td>h1, p { }</td>
+                <td>Applies styles to multiple selectors.</td>
+            </tr>
+            <tr>
+                <td>Descendant Selector</td>
+                <td>div p { }</td>
+                <td>Selects paragraphs inside a div.</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+
+<!-- COLORS AND BACKGROUNDS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">05 - VISUAL STYLING</p>
+        <h2>Colours and Backgrounds</h2>
+        <p>CSS provides different ways to control colours and backgrounds.</p>
+    </div>
+
+    <div class="learning-card">
+        <h3>Colour Property</h3>
+        <p>The color property changes the colour of text.</p>
+        <pre>
+h1 {
+    color: purple;
+}
+        </pre>
+
+        <h3>Background Colour</h3>
+        <p>The background-color property changes an element's background.</p>
+        <pre>
+body {
+    background-color: lightblue;
+}
+        </pre>
+
+        <h3>Different Colour Formats</h3>
+        <ul class="topic-list">
+            <li><strong>Colour names:</strong> red, blue, green, black.</li>
+            <li><strong>HEX:</strong> #ff0000 represents red.</li>
+            <li><strong>RGB:</strong> rgb(255, 0, 0) represents red.</li>
+            <li><strong>RGBA:</strong> Adds transparency to RGB colours.</li>
+        </ul>
+
+        <h3>Background Image</h3>
+        <pre>
+body {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+        </pre>
+    </div>
+</section>
+
+
+<!-- TEXT AND FONTS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">06 - TEXT FORMATTING</p>
+        <h2>CSS Fonts and Text Properties</h2>
+        <p>Control how text appears on a webpage.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>Some important text and font properties are:</p>
+
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>Changes the font style.</td>
+            </tr>
+            <tr>
+                <td>font-size</td>
+                <td>Changes the size of text.</td>
+            </tr>
+            <tr>
+                <td>font-weight</td>
+                <td>Controls the thickness of text.</td>
+            </tr>
+            <tr>
+                <td>text-align</td>
+                <td>Aligns text left, right or centre.</td>
+            </tr>
+            <tr>
+                <td>text-decoration</td>
+                <td>Adds underline or other decoration.</td>
+            </tr>
+            <tr>
+                <td>line-height</td>
+                <td>Controls the space between lines.</td>
+            </tr>
+            <tr>
+                <td>letter-spacing</td>
+                <td>Controls the space between letters.</td>
+            </tr>
+        </table>
+
+        <h3>Example</h3>
+        <pre>
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+        </pre>
+    </div>
+</section>
+
+
+<!-- BOX MODEL -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">07 - IMPORTANT CONCEPT</p>
+        <h2>The CSS Box Model</h2>
+        <p>Every HTML element can be understood as a rectangular box.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            The CSS Box Model explains how the size and spacing of an
+            element are calculated. It consists of four main parts:
+        </p>
+
+        <ul class="topic-list">
+            <li><strong>Content:</strong> The actual text, image or other content.</li>
+            <li><strong>Padding:</strong> Space between the content and border.</li>
+            <li><strong>Border:</strong> The line surrounding the padding and content.</li>
+            <li><strong>Margin:</strong> Space outside the border.</li>
+        </ul>
+
+        <pre>
+.box {
+    width: 250px;
+    padding: 20px;
+    border: 2px solid purple;
+    margin: 15px;
+}
+        </pre>
+
+        <p>
+            Understanding the box model helps us control the size,
+            spacing and alignment of webpage elements.
+        </p>
+    </div>
+</section>
+
+
+<!-- DISPLAY -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">08 - ELEMENT LAYOUT</p>
+        <h2>CSS Display Property</h2>
+        <p>The display property controls how an element is arranged on a page.</p>
+    </div>
+
+    <div class="learning-card">
+        <ul class="topic-list">
+            <li><strong>Block:</strong> Starts on a new line and generally takes the available width.</li>
+            <li><strong>Inline:</strong> Stays within the same line and takes only the required space.</li>
+            <li><strong>Inline-block:</strong> Stays inline but allows width and height settings.</li>
+            <li><strong>None:</strong> Hides the element from the page layout.</li>
+            <li><strong>Flex:</strong> Creates a flexible layout for arranging items.</li>
+            <li><strong>Grid:</strong> Creates a row-and-column layout.</li>
+        </ul>
+
+        <h3>Example</h3>
+        <pre>
+.box {
+    display: inline-block;
+}
+        </pre>
+    </div>
+</section>
+
+
+<!-- FLEXBOX -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">09 - LAYOUT DESIGN</p>
+        <h2>CSS Flexbox</h2>
+        <p>Flexbox makes it easier to arrange elements in rows or columns.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            Flexbox is a one-dimensional layout system. It is useful
+            for navigation bars, cards, buttons and aligning content.
+        </p>
+
+        <h3>Important Flexbox Properties</h3>
+        <ul class="topic-list">
+            <li><strong>display: flex:</strong> Creates a flex container.</li>
+            <li><strong>justify-content:</strong> Aligns items along the main axis.</li>
+            <li><strong>align-items:</strong> Aligns items along the cross axis.</li>
+            <li><strong>flex-direction:</strong> Sets the direction of items.</li>
+            <li><strong>flex-wrap:</strong> Allows items to move onto another line.</li>
+            <li><strong>gap:</strong> Adds space between items.</li>
+        </ul>
+
+        <h3>Example</h3>
+        <pre>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+        </pre>
+    </div>
+</section>
+
+
+<!-- GRID -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">10 - ADVANCED LAYOUT BASICS</p>
+        <h2>CSS Grid</h2>
+        <p>Grid helps create layouts using rows and columns.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            CSS Grid is a two-dimensional layout system. It is especially
+            useful for image galleries, dashboards and card-based designs.
+        </p>
+
+        <h3>Important Grid Properties</h3>
+        <ul class="topic-list">
+            <li><strong>display: grid:</strong> Creates a grid container.</li>
+            <li><strong>grid-template-columns:</strong> Defines the columns.</li>
+            <li><strong>grid-template-rows:</strong> Defines the rows.</li>
+            <li><strong>gap:</strong> Adds spacing between grid items.</li>
+        </ul>
+
+        <h3>Example</h3>
+        <pre>
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+        </pre>
+    </div>
+</section>
+
+
+<!-- POSITION -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">11 - POSITIONING</p>
+        <h2>CSS Position Property</h2>
+        <p>Positioning controls where elements appear on a webpage.</p>
+    </div>
+
+    <div class="learning-card">
+        <ul class="topic-list">
+            <li><strong>Static:</strong> Default position of an element.</li>
+            <li><strong>Relative:</strong> Positions an element relative to its normal position.</li>
+            <li><strong>Absolute:</strong> Positions an element relative to its nearest positioned ancestor.</li>
+            <li><strong>Fixed:</strong> Keeps an element in the same place on the screen while scrolling.</li>
+            <li><strong>Sticky:</strong> Acts normally until it reaches a specified scroll position.</li>
+        </ul>
+
+        <h3>Example</h3>
+        <pre>
+.box {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+        </pre>
+    </div>
+</section>
+
+
+<!-- BORDERS AND SHADOWS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">12 - DESIGN DETAILS</p>
+        <h2>Borders, Shadows and Rounded Corners</h2>
+        <p>These properties help improve the appearance of elements.</p>
+    </div>
+
+    <div class="learning-card">
+        <h3>Border</h3>
+        <p>Creates an outline around an element.</p>
+        <pre>
+.card {
+    border: 2px solid purple;
+}
+        </pre>
+
+        <h3>Border Radius</h3>
+        <p>Rounds the corners of an element.</p>
+        <pre>
+.card {
+    border-radius: 12px;
+}
+        </pre>
+
+        <h3>Box Shadow</h3>
+        <p>Adds a shadow around an element.</p>
+        <pre>
+.card {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+        </pre>
+
+        <h3>Opacity</h3>
+        <p>Controls the transparency of an element.</p>
+        <pre>
+.box {
+    opacity: 0.7;
+}
+        </pre>
+    </div>
+</section>
+
+
+<!-- HOVER AND TRANSITIONS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">13 - INTERACTIVE DESIGN</p>
+        <h2>Hover Effects and Transitions</h2>
+        <p>CSS can make elements respond visually to user actions.</p>
+    </div>
+
+    <div class="learning-card">
+        <h3>Hover</h3>
+        <p>
+            The :hover pseudo-class applies styles when the mouse
+            pointer moves over an element.
+        </p>
+        <pre>
+button:hover {
+    background-color: purple;
+    color: white;
+}
+        </pre>
+
+        <h3>Transition</h3>
+        <p>
+            The transition property makes changes happen smoothly
+            instead of immediately.
+        </p>
+        <pre>
+button {
+    transition: 0.3s ease;
+}
+        </pre>
+    </div>
+</section>
+
+
+<!-- ANIMATIONS -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">14 - ANIMATIONS</p>
+        <h2>CSS Animations</h2>
+        <p>Animations allow elements to change their appearance over time.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            CSS animations use keyframes to define different stages
+            of an animation. The animation property controls how
+            the animation runs.
+        </p>
+
+        <h3>Example</h3>
+        <pre>
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
+.box {
+    animation: move 2s infinite alternate;
+}
+        </pre>
+
+        <p>
+            In this example, the element moves horizontally and
+            repeats the animation.
+        </p>
+    </div>
+</section>
+
+
+<!-- RESPONSIVE DESIGN -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">15 - RESPONSIVE WEB DESIGN</p>
+        <h2>Media Queries</h2>
+        <p>Make websites work on mobiles, tablets and computers.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            Responsive design means creating websites that adjust
+            according to the screen size of the device.
+        </p>
+
+        <p>
+            Media queries allow CSS rules to apply only when certain
+            screen conditions are met.
+        </p>
+
+        <h3>Example</h3>
+        <pre>
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+        </pre>
+
+        <p>
+            This example changes the layout and heading size when
+            the screen width is 600 pixels or less.
+        </p>
+    </div>
+</section>
+
+
+<!-- CSS VARIABLES -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">16 - REUSABLE STYLES</p>
+        <h2>CSS Variables</h2>
+        <p>Store values and reuse them throughout a stylesheet.</p>
+    </div>
+
+    <div class="learning-card">
+        <p>
+            CSS variables are custom properties that help us reuse
+            values such as colours, spacing and font sizes.
+        </p>
+
+        <h3>Example</h3>
+        <pre>
+:root {
+    --main-color: purple;
+    --text-size: 18px;
+}
+
+h1 {
+    color: var(--main-color);
+    font-size: var(--text-size);
+}
+        </pre>
+
+        <p>
+            If we change the variable value, every property using
+            that variable can update accordingly.
+        </p>
+    </div>
+</section>
+
+
+<!-- PRACTICAL EXAMPLE -->
+<section class="learning">
+    <div class="section-heading">
+        <p class="tag">17 - PRACTICAL APPLICATION</p>
+        <h2>Putting CSS Together</h2>
+        <p>A simple example combining different CSS properties.</p>
+    </div>
+
+    <div class="learning-card">
+        <h3>HTML</h3>
+        <pre>
+&lt;div class="profile-card"&gt;
+    &lt;h2&gt;Web Designer&lt;/h2&gt;
+    &lt;p&gt;Learning CSS step by step.&lt;/p&gt;
+    &lt;button&gt;Explore More&lt;/button&gt;
+&lt;/div&gt;
+        </pre>
+
+        <h3>CSS</h3>
+        <pre>
+.profile-card {
+    background-color: #191f3b;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 350px;
+}
+
+.profile-card button {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+        </pre>
+    </div>
+</section>
+
+
+<!-- EXERCISES -->
+<section class="roadmap">
+    <div class="section-heading">
+        <p class="tag">18 - TEST YOUR KNOWLEDGE</p>
+        <h2>CSS Practice Exercises</h2>
+        <p>Try these tasks to check your understanding.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>Exercise 1: Text Styling</h3>
+        <p>Create a heading and change its colour, font size and alignment.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>Exercise 2: Create a Card</h3>
+        <p>Make a card with a background colour, padding, border and rounded corners.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>Exercise 3: Navigation Bar</h3>
+        <p>Use Flexbox to create a horizontal navigation bar.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>Exercise 4: Responsive Layout</h3>
+        <p>Use a media query to change the layout for smaller screens.</p>
+    </div>
+
+    <div class="roadmap-item">
+        <h3>Exercise 5: Hover Effect</h3>
+        <p>Create a button that changes colour when the mouse moves over it.</p>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <h3>CodeCraft Academy</h3>
+    <p>Learn HTML, CSS and JavaScript. Build your ideas into websites.</p>
+    <p>© 2026 CodeCraft Academy. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
